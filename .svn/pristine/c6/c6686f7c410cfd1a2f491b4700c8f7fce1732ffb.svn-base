@@ -1,0 +1,136 @@
+define(function(require){
+	var $ = require("jquery");
+	
+	var justep = require("$UI/system/lib/justep");
+	
+	var Model = function(){
+		this.callParent();
+	};
+
+	Model.prototype.button1Click = function(event){
+		this.comp("contents1").to(0);
+	};
+	
+
+	Model.prototype.button2Click = function(event){
+		this.comp("contents1").to(1);
+	};
+	
+
+	Model.prototype.button3Click = function(event){
+		this.comp("contents1").to(2);
+	};
+	
+
+	Model.prototype.button5Click = function(event){
+			$(this.getElementByXid("back")).show();
+			var  label = event.source.label;
+			var self = this;
+			var success = function(xhr){
+				$(self.getElementByXid("back")).hide();
+				self.comp("windowDialog1").open({data:xhr});
+			}
+			var error = function(xhr,arg1){
+				$(self.getElementByXid("back")).hide();
+				$(self.getElementByXid("button13")).show();
+			}
+			$.ajax({
+					"type" : "post",
+					"async" : true,
+					"dataType" : "json",
+					"data":{"msgStatus":label},
+					"url" : "http://114.215.94.183:8080/AppServer/first?method=getList",
+					"success" : success,
+					"global":false,
+					"error":error
+					}
+					);
+	};
+	
+
+
+	
+
+	Model.prototype.undoMsgCustomRefresh = function(event){
+		var data = this.comp("undoMsg");
+		var self =this;
+		var success = function(xhr,arg1,arg2){
+			console.log(xhr);
+			for (var i=0; i<xhr.length; i++){
+				var obj = xhr[i];
+				var options = {
+						defaultValues : [
+						{_id: obj.msgId , title: obj.msgTitle,content: obj.msgContent}
+						]
+				};	
+				data.newData(options);
+			}
+		}
+		var error = function(xhr,arg1){
+			$(self.getElementByXid("back")).hide();
+			$(self.getElementByXid("button13")).show();
+		}
+		$.ajax({
+				"type" : "post",
+				"async" : true,
+				"dataType" : "json",
+				"url" : "http://114.215.94.183:8080/AppServer/first?method=getUnDoneMsg",
+				"success" : success,
+				"global":false,
+				"error":error
+				}
+				);
+	};
+	
+
+
+	
+
+	Model.prototype.button4Click = function(event){
+		var self = this;
+		$(this.getElementsByXid("back")).show();
+		var data = this.comp("undoMsg");
+		var doAjax = function(){
+			var MsgId = data.getValue("_id");
+			var success = function(xhr){
+				if (xhr.retCode==="成功"){
+					self.comp("windowDialog2").open({"data":xhr.detailMessage});
+					$(self.getElementByXid("back")).hide();
+				}
+			}
+			var error =function(){
+				$(self.getElementByXid("back")).hide();
+				$(self.getElementByXid("button13")).show();
+			}
+			
+			$.ajax({
+					"type" : "post",
+					"async" : true,
+					"data":{"MsgId":MsgId},
+					"dataType" : "json",
+					"url" : "http://114.215.94.183:8080/AppServer/first?method=getDetailMsg",
+					"success" : success,
+					"global":false,
+					"error":error
+					}
+					);
+		}
+		setTimeout(doAjax,100);
+	};
+	
+
+
+	
+
+	Model.prototype.windowDialog2Receive = function(event){
+		if (event.data.retCode == "已处理"){
+			this.comp("undoMsg").remove();
+		}
+	};
+	
+
+
+	
+
+	return Model;
+});

@@ -1,0 +1,36 @@
+.contents{
+	background-color:#F3F2Ed;
+}
+.output{
+	background-color:#FFFFFF;
+	padding: 20px 10px 5px 10px;
+	border-radius:8px;
+	margin:2px 0px 0px 0px;
+	box-shadow:0 5px 0px 0px #EBEBE9;
+}
+.span{
+	color:#333333;
+}
+.notAgreePanel{
+	background-color:rgba(0,0,0,0.3);
+	position:absolute;
+	height:100%;
+	width:100%;
+	display:none;
+}
+.textArea{
+	width:90%;
+	position:relative;
+	left:5%;
+	margin-top:5px
+}
+.notAgreeDiv{
+	background-color:#FFFFFF;
+	position:absolute;
+	height:60%;
+	width:60%;
+	top:20%;
+	left:20%;
+	border-radius:5px;
+	box-shadow:2px 3px 1px 1px #4E4E4D;
+}

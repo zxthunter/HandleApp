@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:mobile">  
+  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;left:254px;top:26px;"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="data1" idColumn="title"><column label="审批标题" name="title" type="String" xid="xid1"></column>
+  <column label="审批细节" name="detail" type="String" xid="xid2"></column></div></div> 
+<span component="$UI/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" onReceive="windowReceiver1Receive" style="left:95px;top:7px;"></span>
+  <span component="$UI/system/components/justep/messageDialog/messageDialog" xid="messageDialog1" type="OKCancel" onOK="messageDialog1OK" message="您确定同意这条审批吗？" style="left:98px;top:10px;"></span><div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
+   <div class="x-panel-top" xid="top1"><div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1">
+   <div class="x-titlebar-left" xid="div1"><a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" label="button" xid="button3" icon="icon-ios7-undo" onClick="button3Click">
+   <i xid="i3" class="icon-ios7-undo"></i>
+   <span xid="span3"></span></a></div>
+   <div class="x-titlebar-title" xid="div2"></div>
+   <div class="x-titlebar-right reverse" xid="div3"></div></div></div>
+   <div class="x-panel-content contents" xid="content1">
+  <div component="$UI/system/components/justep/row/row" class="x-row" xid="row6">
+   <div class="x-col" xid="col16"></div>
+   <div class="x-col" xid="col17"></div>
+   <div class="x-col" xid="col18"></div></div><div component="$UI/system/components/justep/row/row" class="x-row" xid="row1">
+   <div class="x-col x-col-80 x-col-offset-10" xid="col3"><div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label-top" xid="labelOutput1">
+   <label class="x-label span" xid="label1" bind-text="data1.label('title')"></label>
+   <div component="$UI/system/components/justep/output/output" class="x-output x-edit output" xid="output3" bind-ref="data1.ref('title')"></div></div></div></div>
+  <div component="$UI/system/components/justep/row/row" class="x-row" xid="row10">
+   <div class="x-col" xid="col28"></div>
+   <div class="x-col" xid="col29"></div>
+   <div class="x-col" xid="col30"></div></div><div component="$UI/system/components/justep/row/row" class="x-row" xid="row2">
+   <div class="x-col x-col-80 x-col-offset-10" xid="col6"><div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label-top" xid="labelOutput2">
+   <label class="x-label span" xid="label2" bind-text="data1.label('detail')"></label>
+   <div component="$UI/system/components/justep/output/output" class="x-output x-edit output" xid="output4" bind-ref="data1.ref('detail')"></div></div>
+  </div></div>
+  <div component="$UI/system/components/justep/row/row" class="x-row" xid="row9">
+   <div class="x-col" xid="col25"></div>
+   <div class="x-col" xid="col26"></div>
+   <div class="x-col" xid="col27"></div></div><div component="$UI/system/components/justep/row/row" class="x-row" xid="row4">
+   <div class="x-col" xid="col10"></div>
+   <div class="x-col" xid="col11"></div>
+   <div class="x-col" xid="col12"></div></div>
+  <div component="$UI/system/components/justep/row/row" class="x-row" xid="row5">
+   <div class="x-col" xid="col13"></div>
+   <div class="x-col" xid="col14"></div>
+   <div class="x-col" xid="col15"></div></div><div component="$UI/system/components/justep/row/row" class="x-row" xid="row3">
+   <div class="x-col x-col-20 x-col-offset-20" xid="col8"><a component="$UI/system/components/justep/button/button" class="btn btn-success btn-icon-left" label="同意" xid="button1" icon="icon-android-checkmark" onClick="button1Click">
+   <i xid="i1" class="icon-android-checkmark"></i>
+   <span xid="span1">同意</span></a></div>
+   <div class="x-col x-col-20 x-col-offset-10" xid="col9"><a component="$UI/system/components/justep/button/button" class="btn btn-danger btn-icon-left" label="不同意" xid="button2" icon="icon-android-close" onClick="button2Click">
+   <i xid="i2" class="icon-android-close"></i>
+   <span xid="span2">不同意</span></a></div></div></div>
+   </div><div class="notAgreePanel" xid="div4"><div class="notAgreeDiv"><div component="$UI/system/components/justep/row/row" class="x-row" xid="row7">
+   <div class="x-col" xid="col1"><span xid="span5">您不同意这条审批，请填写审批意见。</span></div>
+   </div>
+  <textarea component="$UI/system/components/justep/textarea/textarea" class="textArea form-control" xid="textarea3" style="height:60%;"></textarea><div component="$UI/system/components/justep/row/row" class="x-row" xid="row12">
+   <div class="x-col x-col-20 x-col-offset-20" xid="col24"><a component="$UI/system/components/justep/button/button" class="btn btn-default btn-sm" label="提交" xid="button4" onClick="button4Click">
+   <i xid="i4"></i>
+   <span xid="span6">提交</span></a></div>
+   <div class="x-col x-col-20 x-col-offset-10" xid="col31"><a component="$UI/system/components/justep/button/button" class="btn btn-default btn-sm" label="取消" xid="button5" onClick="button5Click">
+   <i xid="i5"></i>
+   <span xid="span7">取消</span></a></div></div></div>
+   </div></div>

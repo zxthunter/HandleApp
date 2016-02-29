@@ -1,0 +1,57 @@
+define(function(require){
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	
+	var Model = function(){
+		this.callParent();
+	};
+
+	Model.prototype.windowReceiver1Receive = function(event){
+		var undoData = this.comp("undoList");
+		undoData.clear();
+		var json = event.data;
+		console.log(json);
+		var undoJson = json.undoList;
+		for (var i=0; i<undoJson.length; i++){
+				var obj = undoJson[i];
+				var options = {
+						defaultValues : [
+						{_id: obj.msgId , title: obj.msgTitle,content:obj.msgContent}
+						]
+				};	
+				undoData.newData(options);
+		}
+	};
+
+	Model.prototype.button1Click = function(event){
+		this.comp("windowReceiver1").windowCancel();
+	};
+	
+	Model.prototype.button4Click = function(event){
+		var self = this;
+		var data = this.comp("undoList");
+		
+		var doAjax = function(){
+			var MsgId = data.getValue("_id");
+			var success = function(xhr){
+				if (xhr.retCode==="成功"){
+					self.comp("windowDialog1").open({"data":xhr.detailMessage});
+				}
+			}
+			
+			$.ajax({
+					"type" : "post",
+					"async" : true,
+					"data":{"MsgId":MsgId},
+					"dataType" : "json",
+					"url" : "http://114.215.94.183:8080/AppServer/first?method=getDetailMsg",
+					"success" : success,
+					"global":false
+					}
+					);
+		}
+		setTimeout(doAjax,100);
+	};
+	
+	return Model;
+});

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __justepbasexid__="__baseID__" components="$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/output/output,">
+  <script xmlns="">window.__justep.__ResourceEngine.loadCss([{url:'/$v2ad847512cae4e0ebe9543d49da1b310$lzh_CN$s$d/UI2/HandleApp/handle.css', include:'$model/UI2/HandleApp/handle.css'}]);</script>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" style="left:95px;top:7px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog1" style="left:98px;top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:messageDialog1OK" data-config="{&quot;message&quot;:&quot;您确定同意这条审批吗？&quot;,&quot;type&quot;:&quot;OKCancel&quot;}"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal">  
+      <div class="x-modal-inner"> 
+        <div class="x-modal-title"/>  
+        <div class="x-modal-text">您确定同意这条审批吗？</div>  
+        <input class="x-modal-prompt-input" type="text"/> 
+      </div>  
+      <div class="x-modal-buttons"> 
+        <a class="x-modal-button x-modal-button-bold OK" value="ok">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes" value="yes">是</a>  
+        <a class="x-modal-button x-modal-button-bold No" value="no">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel" value="cancel">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p58b76fe367e44629bba17b84c0c54d91-iosstatusbar" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}"> 
+    <div class="x-panel-top" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}"> 
+        <div class="x-titlebar-left" xid="div1"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;icon-ios7-undo&quot;,&quot;label&quot;:&quot;button&quot;}"> 
+            <i xid="i3" class="icon-ios7-undo"/>  
+            <span xid="span3"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title" xid="div2"/>  
+        <div class="x-titlebar-right " xid="div3"> 
+          <div class="empty"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content contents" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col" xid="col16"/>  
+        <div class="x-col" xid="col17"/>  
+        <div class="x-col" xid="col18"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col x-col-80 x-col-offset-10" xid="col3"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label-top" xid="labelOutput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}"> 
+            <label class="x-label span" xid="label1" data-bind="text:data1.label('title')"/>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit output" xid="output3" data-bind="component:{ref:data1.ref('title'),name:'$model/UI2/system/components/justep/output/output'}"/> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col" xid="col28"/>  
+        <div class="x-col" xid="col29"/>  
+        <div class="x-col" xid="col30"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col x-col-80 x-col-offset-10" xid="col6"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label-top" xid="labelOutput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}"> 
+            <label class="x-label span" xid="label2" data-bind="text:data1.label('detail')"/>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit output" xid="output4" data-bind="component:{ref:data1.ref('detail'),name:'$model/UI2/system/components/justep/output/output'}"/> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col" xid="col25"/>  
+        <div class="x-col" xid="col26"/>  
+        <div class="x-col" xid="col27"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col" xid="col10"/>  
+        <div class="x-col" xid="col11"/>  
+        <div class="x-col" xid="col12"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col" xid="col13"/>  
+        <div class="x-col" xid="col14"/>  
+        <div class="x-col" xid="col15"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col x-col-20 x-col-offset-20" xid="col8"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success btn-icon-left" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;,&quot;label&quot;:&quot;同意&quot;}"> 
+            <i xid="i1" class="icon-android-checkmark"/>  
+            <span xid="span1">同意</span> 
+          </a> 
+        </div>  
+        <div class="x-col x-col-20 x-col-offset-10" xid="col9"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-danger btn-icon-left" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;不同意&quot;}"> 
+            <i xid="i2" class="icon-android-close"/>  
+            <span xid="span2">不同意</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style>.x-panel.p58b76fe367e44629bba17b84c0c54d91-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p58b76fe367e44629bba17b84c0c54d91-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p58b76fe367e44629bba17b84c0c54d91-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p58b76fe367e44629bba17b84c0c54d91-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p58b76fe367e44629bba17b84c0c54d91-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p58b76fe367e44629bba17b84c0c54d91-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p58b76fe367e44629bba17b84c0c54d91-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <div xmlns="" class="notAgreePanel" xid="div4"> 
+    <div class="notAgreeDiv"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col" xid="col1"> 
+          <span xid="span5">您不同意这条审批，请填写审批意见。</span> 
+        </div> 
+      </div>  
+      <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="textArea form-control" xid="textarea3" style="height:60%;" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}"/>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col x-col-20 x-col-offset-20" xid="col24"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;提交&quot;}"> 
+            <i xid="i4"/>  
+            <span xid="span6">提交</span> 
+          </a> 
+        </div>  
+        <div class="x-col x-col-20 x-col-offset-10" xid="col31"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;label&quot;:&quot;取消&quot;}"> 
+            <i xid="i5"/>  
+            <span xid="span7">取消</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

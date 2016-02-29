@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HandleApp</string>
+
+    <string name="task">待审批</string>
+    <string name="info">我的</string>
+    <string name="inspect">执法</string>
+    <string name="direct">导航</string>
+    <string name="action_settings">Settings</string>
+</resources>

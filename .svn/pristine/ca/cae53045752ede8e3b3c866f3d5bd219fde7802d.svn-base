@@ -1,0 +1,79 @@
+.gap{
+	border-top: 1px solid #F1F2F6;
+	height:0;
+	padding:0;
+	margin-top:2px;
+}
+.content{
+	margin-top:-2px;
+	padding-top: 0;
+	color:#E5E9EA;
+	font-size:9px
+}
+.title{
+	margin-bottom:1px;
+	padding-bottom:0;
+}
+.Penbutton{
+	color:#9BE649;
+	border-radius:50%;
+	border:1px solid #9BE649;
+	position:relative;
+	top:10px;
+}
+.warnning{
+	font-size:20px;
+	color:#FFE797;
+	margin-right:6px;
+	position:relative;
+	top:2px;
+}
+.row{
+	margin-left:8px;
+}
+.altTitle{
+	height:40px;
+	background-color:#F0F3F5;
+	padding:10px 0px 0px 5px;
+}
+.buttonList{
+	height:43%;
+	width:40%;
+	margin:4% 2% 2% 4%;
+	background-color:rgba(249,203,128,0.5);
+	color:#020202;
+	border:1px solid #F1F2F6;
+	box-shadow:2px 3px 1px 1px rgba(243,243,243,0.5);
+}
+.img{
+	height:80px;
+	width:80px;
+}
+.back{
+	background-color:rgba(0,0,0,0.3);
+	position:absolute;
+	height:100%;
+	width:100%;
+	display:none;
+}
+.loadingButton{
+	color:#FFF;
+	position: absolute;
+	left:50%;
+	top:45%;
+	margin-left:-25px;
+	width:50px;
+	height:50px;
+}
+.netError{
+	position: absolute;
+	width:200px;
+	height:80px;
+	margin-left:-100px;
+	left:50%;
+	top:40%;
+	color:#f00;
+	display:none;
+	border: 1px solid #F00;
+	border-radius:10px;
+}

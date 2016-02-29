@@ -1,0 +1,28 @@
+define(function(require){
+require('$model/UI2/system/components/justep/row/row');
+require('$model/UI2/system/components/justep/panel/panel');
+require('$model/UI2/system/components/justep/panel/child');
+require('$model/UI2/system/components/justep/contents/content');
+require('$model/UI2/system/components/justep/list/list');
+require('$model/UI2/system/components/justep/windowDialog/windowDialog');
+require('$model/UI2/system/components/justep/button/buttonGroup');
+require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/justep/window/window');
+require('$model/UI2/system/components/justep/contents/contents');
+require('$model/UI2/system/components/justep/titleBar/titleBar');
+require('$model/UI2/system/components/justep/data/data');
+require('$model/UI2/system/components/justep/button/button');
+require('$model/UI2/system/components/justep/output/output');
+var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
+var __parent0=require('$model/UI2/HandleApp/mainW'); 
+require('css!$model/UI2/HandleApp/mainW').load();
+var __result = __parent1._extend(__parent0).extend({
+	constructor:function(contextUrl){
+	this.__sysParam='true';
+	this.__contextUrl=contextUrl;
+	this.__id='__baseID__';
+	this._flag_='8c13de6c3103eeb7b2eae0d45c24fe68';
+	this.callParent(contextUrl);
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"_id":{"define":"_id","label":"ID","name":"_id","relation":"_id","rules":{"integer":true},"type":"Integer"},"content":{"define":"content","label":"审批内容","name":"content","relation":"content","type":"String"},"title":{"define":"title","label":"审批标题","name":"title","relation":"title","type":"String"},"type":{"define":"type","label":"审批类型","name":"type","relation":"type","type":"String"}},"directDelete":false,"events":{"onCustomRefresh":"undoMsgCustomRefresh"},"idColumn":"_id","limit":20,"xid":"undoMsg"});
+}}); 
+return __result;});

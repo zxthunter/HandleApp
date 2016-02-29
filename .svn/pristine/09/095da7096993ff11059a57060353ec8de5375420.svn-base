@@ -1,0 +1,26 @@
+.gap{
+	border-top: 1px solid #F1F2F6;
+	height:0;
+	padding:0;
+	margin-top:2px;
+}
+.content{
+	margin-top:-2px;
+	padding-top: 0;
+	color:#E5E9EA;
+	font-size:9px
+}
+.title{
+	margin-bottom:1px;
+	padding-bottom:0;
+}
+.Penbutton{
+	color:#9BE649;
+	border-radius:50%;
+	border:1px solid #9BE649;
+	position:relative;
+	top:10px;
+}
+.row{
+	margin-left:8px;
+}

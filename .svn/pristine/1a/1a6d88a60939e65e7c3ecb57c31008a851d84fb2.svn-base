@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __justepbasexid__="__baseID__" components="$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/output/output,">
+  <script xmlns="">window.__justep.__ResourceEngine.loadCss([{url:'/$v4f2b35298dad40a195aae00d5acf9710$lzh_CN$s$d/UI2/HandleApp/mainW.css', include:'$model/UI2/HandleApp/mainW.css'}]);</script>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" style="left:182px;top:16px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/HandleApp/handlelistW.w&quot;}"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog" style="display:none;">  
+      <div class="x-dialog-title"> 
+        <button class="close"> 
+          <span>×</span> 
+        </button>  
+        <div class="x-dialog-title-text"/> 
+      </div>  
+      <div class="x-dialog-body"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog2" style="left:192px;top:24px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:windowDialog2Receive" data-config="{&quot;src&quot;:&quot;$model/UI2/HandleApp/handle.w&quot;}"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog" style="display:none;">  
+      <div class="x-dialog-title"> 
+        <button class="close"> 
+          <span>×</span> 
+        </button>  
+        <div class="x-dialog-title-text"/> 
+      </div>  
+      <div class="x-dialog-body"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p75db50aad34041f8b04caeb3b11bb08f-iosstatusbar" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}"> 
+    <div class="x-panel-top" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}"> 
+        <div class="x-titlebar-left" xid="div1"/>  
+        <div class="x-titlebar-title" xid="div2"/>  
+        <div class="x-titlebar-right " xid="div3"> 
+          <div class="empty"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;swipe&quot;:false,&quot;wrap&quot;:false}"> 
+        <div class="x-contents-content active" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}"> 
+          <div class="altTitle"> 
+            <span class="glyphicon glyphicon-warning-sign warnning"/>您有未审批的信息！
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;undoMsg&quot;}"> 
+            <ul class="x-list-template hide" xid="listTemplateUl1" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+                  <div class="x-col x-col-offset-5 x-col-70 title" xid="col1"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output title row" xid="output1" data-bind="component:{ref:ref('title'),name:'$model/UI2/system/components/justep/output/output'}"/> 
+                  </div>  
+                  <div class="x-col x-col-20" xid="col3"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon Penbutton" xid="button4" style="background-color:transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;icon&quot;:&quot;icon-edit&quot;,&quot;label&quot;:&quot;审批&quot;}"> 
+                      <i xid="i4" class="icon-edit"/>  
+                      <span xid="span4">审批</span> 
+                    </a> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+                  <div class="x-col x-col-70" xid="col9"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output content row" xid="output2" data-bind="component:{ref:ref('content'),name:'$model/UI2/system/components/justep/output/output'}"/> 
+                  </div>  
+                  <div class="x-col x-col-20" xid="col11"/> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+                  <div class="x-col gap" xid="col7"/> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-contents-content" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top buttonList" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/HandleApp/img/tree.png&quot;,&quot;label&quot;:&quot;培训计划审批&quot;}"> 
+            <i xid="i5"/>  
+            <img src="@justepContextPath@/$v0cc6358768c54569b14ecdfdff6c0846$lzh_CN$s$d/UI2/HandleApp/img/tree.png" class="img" xid="image2"/>  
+            <span xid="span5">培训计划审批</span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top buttonList" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/HandleApp/img/lamp.png&quot;,&quot;label&quot;:&quot;考试计划审批&quot;}"> 
+            <i xid="i6"/>  
+            <img src="@justepContextPath@/$v3e2076dbe83f415bad4f7bfd596096f1$lzh_CN$s$d/UI2/HandleApp/img/lamp.png" class="img" xid="image3"/>  
+            <span xid="span6">考试计划审批</span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top buttonList" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/HandleApp/img/weather.png&quot;,&quot;label&quot;:&quot;操作证审核&quot;}"> 
+            <i xid="i7"/>  
+            <img src="@justepContextPath@/$v28dd4e004f8643b89acf856fb072cd59$lzh_CN$s$d/UI2/HandleApp/img/weather.png" class="img" xid="image3"/>  
+            <span xid="span7">操作证审核</span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top buttonList" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/HandleApp/img/bullseye.png&quot;,&quot;label&quot;:&quot;制证审核&quot;}"> 
+            <i xid="i8"/>  
+            <img src="@justepContextPath@/$v8d3dac756b154cd4ab86329c8bb1c671$lzh_CN$s$d/UI2/HandleApp/img/bullseye.png" xid="image4" class="img"/>  
+            <span xid="span8">制证审核</span> 
+          </a> 
+        </div>  
+        <div class="x-contents-content" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-lg btn-group-justified" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;icon-compose&quot;,&quot;label&quot;:&quot;待审批&quot;}"> 
+          <i xid="i1" class="icon-compose"/>  
+          <span xid="span1">待审批</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;icon&quot;:&quot;icon-grid&quot;,&quot;label&quot;:&quot;导航&quot;}"> 
+          <i xid="i2" class="icon-grid"/>  
+          <span xid="span2">导航</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;icon-person&quot;,&quot;label&quot;:&quot;我的&quot;}"> 
+          <i xid="i3" class="icon-person"/>  
+          <span xid="span3">我的</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style>.x-panel.p75db50aad34041f8b04caeb3b11bb08f-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p75db50aad34041f8b04caeb3b11bb08f-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p75db50aad34041f8b04caeb3b11bb08f-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p75db50aad34041f8b04caeb3b11bb08f-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p75db50aad34041f8b04caeb3b11bb08f-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p75db50aad34041f8b04caeb3b11bb08f-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p75db50aad34041f8b04caeb3b11bb08f-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <div xmlns="" xid="back" class="back"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-top loadingButton" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-loading-a&quot;,&quot;label&quot;:&quot;请稍等&quot;}"> 
+      <i xid="i9" class="icon-loading-a"/>  
+      <span xid="span9">请稍等</span> 
+    </a> 
+  </div>  
+  <a xmlns="" component="$model/UI2/system/components/justep/button/button" class="netError btn btn-link btn-lg btn-icon-top" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;请您检查网络连接&quot;}"> 
+    <i xid="i13" class="icon-android-close"/>  
+    <span xid="span13">请您检查网络连接</span> 
+  </a> 
+</div>

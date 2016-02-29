@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\AndroidProjects\HandleApp\app\libs\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="E:\AndroidProjects\HandleApp\app\build\intermediates\pre-dexed\debug\gson-2.3.1-c11a0a3d51cf922e610d135fc949349067107011.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudio\SDK\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="E:\AndroidProjects\HandleApp\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-1c497d6ef72a12bd017e56a6652e2d9f1eb71f3d.jar" />
+    </item>
+    <item
+        jar="E:\AndroidProjects\HandleApp\app\libs\android-async-http-1.4.6.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
+        <dex dex="E:\AndroidProjects\HandleApp\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.6-12366789bdf5d93038922f4ff5a25fb8f74692f2.jar" />
+    </item>
+    <item
+        jar="E:\AndroidProjects\HandleApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="E:\AndroidProjects\HandleApp\app\build\intermediates\pre-dexed\debug\classes-4f455c195e73ed16861b841ceb4a37e9260e99c6.jar" />
+    </item>
+    <item
+        jar="E:\AndroidProjects\HandleApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="E:\AndroidProjects\HandleApp\app\build\intermediates\pre-dexed\debug\classes-f239041575c50897b77647ad06158fcf55434d3d.jar" />
+    </item>
+    <item
+        jar="E:\AndroidProjects\HandleApp\app\libs\fastjson-1.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b3cd06ff3f21c8cf487c241ed145154fbae6b4e2">
+        <dex dex="E:\AndroidProjects\HandleApp\app\build\intermediates\pre-dexed\debug\fastjson-1.2.2-0ccf484a4f9e3304687951c7ee831850b4ec4a81.jar" />
+    </item>
+    <item
+        jar="E:\AndroidProjects\HandleApp\app\libs\activeandroid-3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8cdfaba830e02c56967e946078b60fc476432f36">
+        <dex dex="E:\AndroidProjects\HandleApp\app\build\intermediates\pre-dexed\debug\activeandroid-3.0-092c8c426f07e9ab67daa90890079420846cff98.jar" />
+    </item>
+    <item
+        jar="E:\AndroidProjects\HandleApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="E:\AndroidProjects\HandleApp\app\build\intermediates\pre-dexed\debug\classes-cde6dd68d6892f5e9cc4404702826c19b841ac7d.jar" />
+    </item>
+    <item
+        jar="E:\AndroidProjects\HandleApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="E:\AndroidProjects\HandleApp\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-c6fb86078c30ed94d670b9b7b38f49aab064fdf6.jar" />
+    </item>
+    <item
+        jar="E:\AndroidProjects\HandleApp\app\libs\JavaMD5.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="42a3fce3da3a37ab2be9cb6de4c2581f69284322">
+        <dex dex="E:\AndroidProjects\HandleApp\app\build\intermediates\pre-dexed\debug\JavaMD5-887e5ac39e422c494d1b1b4d0697fe0a88129ce2.jar" />
+    </item>
+
+</items>
